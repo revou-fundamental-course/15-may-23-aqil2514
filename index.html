@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KalTik (Kalkulator Matematik)</title>
+
+    <!-- MY FAVICON  -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- MY FONTS  -->
+    <!-- MY FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lobster&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+    <!-- MY STYLE  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <nav>
+        <h1>Kal<span>Tik</span></h1>
+        <p>Kalkulator <span>Matematik</span></p>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- OPENING START -->
+    <section id="opening">
+      <h1>KalTik</h1>
+      <div class="container-opening">
+        <p>Ini adalah project dari BootCamp yang diselenggarakan oleh RevoU. Diberikan tugas berupa pembuatan sebuah kalkulator persegi.</p>
+      </div>
+      <div id="mulai-but">
+        <a href="#mulai"><button>Mulai</button></a>
+      </div>
+    </section>
+    <!-- OPENING END -->
+
+    <!-- MAIN START  -->
+    <main id="mulai">
+      <div id="keliling-persegi" class="container-main">
+        <h1>Keliling Persegi</h1>
+        <figure>
+          <img src="img/persegi.jpg" alt="persegi" class="img-main" />
+          <figcaption class="img-caption">Persegi</figcaption>
+        </figure>
+        <div class="info-main">
+          <h2>Rumus Keliling Persegi adalah:</h2>
+          <p class="rumus">K = 4 x S</p>
+          <p>Keterangan:</p>
+          <p>K = Keliling</p>
+          <p>S = Sisi</p>
+        </div>
+        <div class="bta">
+          <h2>Hitung Keliling Persegi</h2>
+          <form>
+            <input id="nilai-keliling" type="number" min="0" placeholder="Masukkan Nilai Sisi" required />
+            <input type="button" value="Hitung" onclick="kelilingPersegi()" />
+          </form>
+          <p id="hasil-keliling"></p>
+        </div>
+      </div>
+      <div id="luas-persegi" class="container-main">
+        <h1>Luas Persegi</h1>
+        <figure>
+          <img src="img/persegi.jpg" alt="persegi" class="img-main" />
+          <figcaption class="img-caption">Persegi</figcaption>
+        </figure>
+        <div class="info-main">
+          <h2>Rumus Luas Persegi adalah:</h2>
+          <p class="rumus">L = S x S</p>
+          <p>Keterangan:</p>
+          <p>L = Luas</p>
+          <p>S = Sisi</p>
+        </div>
+        <div class="bta">
+          <h2>Hitung Luas Persegi</h2>
+          <form>
+            <input id="nilai-luas" type="number" min="0" placeholder="Masukkan Nilai Sisi" required />
+            <input type="button" value="Hitung" onclick="luasPersegi()" />
+          </form>
+          <p id="hasil-luas"></p>
+        </div>
+      </div>
+    </main>
+    <!-- MAIN END  -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <h1>Created by:</h1>
+      <p><a href="https://aqil2514.github.io/" title="Klik untuk lihat portofolio saya" target="_blank">Muhamad Aqil Maulana</a></p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- MY SCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

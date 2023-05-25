@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  background-color: #5e5ef8;
+  text-align: center;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header h1 {
+  font-family: "Lobster", sans-serif;
+  color: white;
+}
+
+header h1 span {
+  color: yellow;
+}
+
+header p {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+header p span {
+  color: yellow;
+}
+
+/* OPENING SECTION START  */
+
+#opening {
+  height: 100vh;
+  display: flex;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#opening h1 {
+  font-family: "Lobster", sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container-opening {
+  width: 50%;
+  margin: 0 auto;
+  border: 0.3rem solid white;
+  border-radius: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1rem;
+  color: white;
+}
+
+#mulai-but {
+  margin: 3rem auto 0;
+  width: 50%;
+}
+
+#mulai-but a button {
+  position: relative;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+#mulai-but a button::after {
+  content: "MULAI";
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 3.5;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+#mulai-but a:hover button::after {
+  transform: scaleX(1);
+  color: black;
+}
+
+#mulai-but a:hover button {
+  border: none;
+}
+
+/* OPENING SECTION END  */
+
+/* MAIN SECTION  */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+  width: 100%;
+}
+
+.container-main {
+  border: 0.3rem solid blue;
+  width: 40%;
+  height: 120%;
+  margin-top: 3rem;
+}
+
+.container-main h1 {
+  font-family: "Lobster", sans-serif;
+  text-align: center;
+  background-color: aqua;
+}
+
+.img-main {
+  display: block;
+  width: 22.5rem;
+  margin: 0 auto;
+}
+
+.img-caption {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.info-main {
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-main h2 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.rumus {
+  text-align: center;
+  border: 0.3rem solid black;
+}
+
+.bta {
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.bta h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bta input[type="number"] {
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.bta input[type="button"] {
+  margin: 1rem;
+  padding: 0.5rem 3rem;
+}
+
+/* MAIN SECTION END  */
+
+/* FOOTER SECTION START  */
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+footer h1 {
+  font-style: italic;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+/* FOOTER SECTION END  */
+
+@media (max-width: 1060px) {
+  html {
+    font-size: 75%;
+  }
+  .img-main {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 67.5%;
+  }
+  main {
+    flex-direction: column;
+  }
+  .img-main {
+    width: 15rem;
+  }
+  .container-main {
+    width: 60%;
+    margin: 1rem auto;
+  }
+}
